@@ -1,0 +1,34 @@
+﻿@page "/track-order"
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-info text-white">
+            <h2>Rastreo de Pedido</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Ingresa tu número de pedido para verificar el estado de envío.</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Número de Pedido" @bind="orderId">
+                <button class="btn btn-info" type="button" @onclick="TrackOrderStatus">Rastrear</button>
+            </div>
+
+            @if (!string.IsNullOrEmpty(orderStatus))
+            {
+                <div class="alert alert-info mt-3" role="alert">
+                    <strong>Estado del Pedido:</strong> @orderStatus
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private string orderId;
+    private string orderStatus;
+
+    private void TrackOrderStatus()
+    {
+        // Simulación de estado del pedido
+        orderStatus = "En camino"; // Cambiar el estado según tu lógica de negocio
+    }
+}

@@ -9,20 +9,32 @@
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="flex-column">
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            <NavLink class="nav-link" href="/Index" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Inicio
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            <NavLink href="/products" class="nav-link">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Productos
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            <NavLink href="/support" class="nav-link">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Soporte
+            </NavLink>
+        </div>
+        
+        <div class="nav-item px-3">
+            <NavLink href="/contact" class="nav-link">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Contacto
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink href="/track-order" class="nav-link">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Rastreo de Pedido
             </NavLink>
         </div>
     </nav>

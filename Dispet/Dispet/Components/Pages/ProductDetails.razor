@@ -1,0 +1,48 @@
+﻿@page "/product/{id:int}"
+@inject ProductService ProductService
+@using Dispet.Models
+
+<h2>@product?.Name</h2>
+<p>@product?.Description</p>
+<p><strong>Precio:</strong> $@product?.Price</p>
+
+<h3>Reseñas</h3>
+@if (product?.Reviews != null && product.Reviews.Any())
+{
+    @foreach (var review in product.Reviews)
+    {
+        <div class="review mb-2">
+            <p><strong>@review.User</strong>: @review.Comment</p>
+            <p>Rating: @string.Concat(Enumerable.Repeat("⭐", review.Rating))</p>
+        </div>
+    }
+}
+else
+{
+    <p>No hay reseñas para este producto.</p>
+}
+
+<h4>Deja tu reseña</h4>
+<EditForm Model="newReview" OnValidSubmit="SubmitReview">
+    <InputText @bind-Value="newReview.User" class="form-control" placeholder="Tu nombre" />
+    <InputText @bind-Value="newReview.Comment" class="form-control" placeholder="Escribe un comentario" />
+    <InputNumber @bind-Value="newReview.Rating" class="form-control" min="1" max="5" placeholder="Calificación (1-5)" />
+    <button class="btn btn-primary mt-2">Enviar</button>
+</EditForm>
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Product product;
+    private Review newReview = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await ProductService.GetProductById(id);
+    }
+
+    private async Task SubmitReview()
+    {
+        product.Reviews.Add(newReview);
+        newReview = new Review(); // Reiniciar el formulario después de enviar
+    }
+}
