@@ -1,0 +1,34 @@
+﻿@page "/products"
+
+<h2 class="mb-4">Productos</h2>
+<div class="row">
+    @foreach (var product in sampleProducts)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text"><strong>Precio:</strong> $@product.Price</p>
+                    <button class="btn btn-success">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<Product> sampleProducts = new()
+    {
+        new Product { Name = "Producto 1", Description = "Descripción del producto 1", Price = 20.00m },
+        new Product { Name = "Producto 2", Description = "Descripción del producto 2", Price = 35.00m },
+        new Product { Name = "Producto 3", Description = "Descripción del producto 3", Price = 50.00m }
+    };
+
+    private class Product
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+    }
+}

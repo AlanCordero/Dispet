@@ -1,0 +1,38 @@
+﻿@page "/cart"
+
+<h2 class="mb-4">Carrito de Compras</h2>
+
+@if (cartItems.Count == 0)
+{
+    <div class="alert alert-info" role="alert">
+        Tu carrito está vacío.
+    </div>
+}
+else
+{
+    <table class="table table-bordered shadow-sm">
+        <thead class="thead-light">
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in cartItems)
+            {
+                <tr>
+                    <td>@item</td>
+                    <td>$20.00</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p class="text-right"><strong>Total:</strong> $60.00</p>
+    <button class="btn btn-success" @onclick="Checkout">Realizar Pedido</button>
+}
+
+@code {
+    private List<string> cartItems = new() { "Producto 1", "Producto 2", "Producto 3" };
+
+    private void Checkout() { /* Código para procesar el pedido */ }
+}
