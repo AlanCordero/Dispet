@@ -1,44 +1,33 @@
-﻿@using Dispet.Models
-@page "/admin/products"
+﻿@page "/admin-products"
+@using Dispet.Models
 
-<h2 class="mb-4">Administración de Productos</h2>
-
-<button class="btn btn-primary mb-3" @onclick="NewProduct">Agregar Nuevo Producto</button>
-
-<table class="table table-striped">
-    <thead class="thead-dark">
-        <tr>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Precio</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var product in sampleProducts)
-        {
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Administrar Productos</h2>
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-primary">
             <tr>
-                <td>@product.Name</td>
-                <td>@product.Description</td>
-                <td>$@product.Price</td>
-                <td>
-                    <button class="btn btn-warning btn-sm" @onclick="EditProduct">Editar</button>
-                    <button class="btn btn-danger btn-sm" @onclick="DeleteProduct">Eliminar</button>
-                </td>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Acción</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>$@product.Price</td>
+                    <td>
+                        <button class="btn btn-success btn-sm">Agregar al Carrito</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
 @code {
-    private List<Product> sampleProducts = new()
-    {
-        new Product { Name = "Producto 1", Description = "Descripción del producto 1", Price = 20.00m },
-        new Product { Name = "Producto 2", Description = "Descripción del producto 2", Price = 35.00m },
-        new Product { Name = "Producto 3", Description = "Descripción del producto 3", Price = 50.00m }
-    };
-
-    private void NewProduct() { /* Código para agregar nuevo producto */ }
-    private void EditProduct() { /* Código para editar producto */ }
-    private void DeleteProduct() { /* Código para eliminar producto */ }
+    private List<Product> products = new(); // Ejemplo de datos
 }

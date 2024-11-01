@@ -6,35 +6,37 @@
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
+<div class="top-row ps-3 navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Dispet</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="/Index" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Inicio
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink href="/products" class="nav-link">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Productos
+            <NavLink class="nav-link" href="/admin-products">
+                <span class="bi bi-box-seam" aria-hidden="true"></span> Administrar Productos
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink href="/support" class="nav-link">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Soporte
-            </NavLink>
-        </div>
-        
-        <div class="nav-item px-3">
-            <NavLink href="/contact" class="nav-link">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Contacto
+            <NavLink class="nav-link" href="/checkout">
+                <span class="bi bi-cart-check" aria-hidden="true"></span> Checkout
             </NavLink>
         </div>
 
         <div class="nav-item px-3">
-            <NavLink href="/track-order" class="nav-link">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Rastreo de Pedido
+            <NavLink class="nav-link" href="/product/1">
+                <span class="bi bi-info-circle-fill" aria-hidden="true"></span> Detalles del Producto
             </NavLink>
         </div>
     </nav>

@@ -6,13 +6,6 @@ C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\Dispet.deps.jso
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\Dispet.runtimeconfig.json
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\Dispet.dll
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\Dispet.pdb
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\DnsClient.dll
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\SharpCompress.dll
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\Snappier.dll
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\ZstdSharp.dll
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.csproj.AssemblyReference.cache
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.AssemblyInfoInputs.cache
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.AssemblyInfo.cs
@@ -29,7 +22,6 @@ C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\scopedcss\Compo
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\scopedcss\bundle\Dispet.styles.css
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\scopedcss\projectbundle\Dispet.bundle.scp.css
-C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.csproj.Up2Date
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.dll
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\refint\Dispet.dll
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.pdb

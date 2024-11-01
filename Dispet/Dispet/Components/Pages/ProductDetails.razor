@@ -1,48 +1,83 @@
-﻿@page "/product/{id:int}"
-@inject ProductService ProductService
+﻿@page "/product/{id}"
 @using Dispet.Models
 
-<h2>@product?.Name</h2>
-<p>@product?.Description</p>
-<p><strong>Precio:</strong> $@product?.Price</p>
-
-<h3>Reseñas</h3>
-@if (product?.Reviews != null && product.Reviews.Any())
-{
-    @foreach (var review in product.Reviews)
-    {
-        <div class="review mb-2">
-            <p><strong>@review.User</strong>: @review.Comment</p>
-            <p>Rating: @string.Concat(Enumerable.Repeat("⭐", review.Rating))</p>
+<div class="container mt-5">
+    <!-- Tarjeta del producto -->
+    <div class="card mb-4 shadow-lg">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x400" class="img-fluid rounded-start" alt="Imagen del producto">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">@product?.Name</h3>
+                    <p class="card-text">@product?.Description</p>
+                    <p class="card-text"><strong>Precio:</strong> $@product?.Price</p>
+                    <button class="btn btn-success btn-lg w-100 mt-3">Agregar al Carrito</button>
+                    
+                </div>
+            </div>
         </div>
-    }
-}
-else
-{
-    <p>No hay reseñas para este producto.</p>
-}
+    </div>
 
-<h4>Deja tu reseña</h4>
-<EditForm Model="newReview" OnValidSubmit="SubmitReview">
-    <InputText @bind-Value="newReview.User" class="form-control" placeholder="Tu nombre" />
-    <InputText @bind-Value="newReview.Comment" class="form-control" placeholder="Escribe un comentario" />
-    <InputNumber @bind-Value="newReview.Rating" class="form-control" min="1" max="5" placeholder="Calificación (1-5)" />
-    <button class="btn btn-primary mt-2">Enviar</button>
-</EditForm>
+    <!-- Sección de reseñas -->
+    <h4 class="mt-5">Reseñas de Clientes</h4>
+
+    @if (product?.Reviews != null && product.Reviews.Any())
+    {
+        @foreach (var review in product.Reviews)
+        {
+            <div class="border rounded p-3 mb-3 shadow-sm">
+                <p><strong>@review.User</strong> <span class="text-muted">(@string.Concat(Enumerable.Repeat("⭐", review.Rating)))</span></p>
+                <p>@review.Comment</p>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-muted">No hay reseñas para este producto.</p>
+    }
+
+    <!-- Formulario para agregar reseña -->
+    <h5 class="mt-4">Deja tu Reseña</h5>
+    <form>
+        <div class="mb-3">
+            <label for="user" class="form-label">Nombre</label>
+            <input type="text" id="user" class="form-control" placeholder="Tu nombre" />
+        </div>
+
+        <div class="mb-3">
+            <label for="comment" class="form-label">Comentario</label>
+            <textarea id="comment" class="form-control" rows="3" placeholder="Escribe tu comentario aquí"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="rating" class="form-label">Calificación</label>
+            <select id="rating" class="form-select">
+                <option selected>Selecciona una calificación</option>
+                <option value="1">1 estrella</option>
+                <option value="2">2 estrellas</option>
+                <option value="3">3 estrellas</option>
+                <option value="4">4 estrellas</option>
+                <option value="5">5 estrellas</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+    </form>
+</div>
 
 @code {
-    [Parameter] public int id { get; set; }
-    private Product product;
-    private Review newReview = new();
-
-    protected override async Task OnInitializedAsync()
-    {
-        product = await ProductService.GetProductById(id);
-    }
-
-    private async Task SubmitReview()
-    {
-        product.Reviews.Add(newReview);
-        newReview = new Review(); // Reiniciar el formulario después de enviar
-    }
+    [Parameter] public string id { get; set; }
+    private Product product = new Product // Datos de ejemplo
+        {
+            Name = "Dispensador Inteligente",
+            Description = "Controla las porciones y horarios de alimentación de tu mascota desde tu celular.",
+            Price = 75.00m,
+            Reviews = new List<Review>
+        {
+            new Review { User = "Ana", Rating = 5, Comment = "¡Excelente producto! Mi perro está feliz." },
+            new Review { User = "Carlos", Rating = 4, Comment = "Muy útil, aunque un poco caro." }
+        }
+        };
 }

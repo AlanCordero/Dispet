@@ -1,8 +1,6 @@
 using Dispet.Components;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<ShoppingCartService>();
-builder.Services.AddSingleton<ProductService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

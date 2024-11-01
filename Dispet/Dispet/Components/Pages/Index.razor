@@ -1,75 +1,46 @@
 ﻿@page "/Index"
 
 <div class="container mt-5">
-    <!-- Encabezado de Bienvenida -->
-    <div class="jumbotron bg-primary text-white p-5 rounded shadow-lg">
+    <!-- Jumbotron de bienvenida -->
+    <div class="jumbotron p-5 bg-primary text-white text-center rounded shadow">
         <h1 class="display-4">Bienvenido a Dispet</h1>
-        <p class="lead">Encuentra los mejores dispensadores de comida para tus mascotas, con tecnología avanzada y diseño práctico para facilitar tu vida y la de tu amigo peludo.</p>
-        <a class="btn btn-light btn-lg" href="/products" role="button">Ver Productos</a>
+        <p class="lead">Encuentra los mejores dispensadores de comida para tus mascotas</p>
+        <a class="btn btn-light btn-lg" href="/admin-products" role="button">Administrar Productos</a>
+        <a class="btn btn-light btn-lg" href="/checkout" role="button">Ir al Checkout</a>
     </div>
 
-    <!-- Sección de Productos Destacados -->
-    <section class="mt-5">
-        <h2 class="text-center mb-4">Productos Destacados</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm h-100">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Dispensador Inteligente Pro</h5>
-                        <p class="card-text">Automatiza las comidas de tu mascota con conectividad y control remoto.</p>
-                        <a href="/product/1" class="btn btn-primary">Ver Detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm h-100">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Dispensador Compacto Plus</h5>
-                        <p class="card-text">Ideal para espacios pequeños, con capacidad de hasta 5 kg de alimento.</p>
-                        <a href="/product/2" class="btn btn-primary">Ver Detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm h-100">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Dispensador Premium</h5>
-                        <p class="card-text">Capacidad extra grande y sistema antiatasco para un flujo constante.</p>
-                        <a href="/product/3" class="btn btn-primary">Ver Detalles</a>
-                    </div>
+    <!-- Sección de productos destacados -->
+    <h2 class="text-center my-5">Productos Destacados</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Dispensador Automático</h5>
+                    <p class="card-text">Controla las porciones y horarios de tu mascota.</p>
+                    <a href="/product/1" class="btn btn-primary">Ver Detalles</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Sección de Características -->
-    <section class="mt-5 bg-light p-5 rounded shadow-lg">
-        <h2 class="text-center mb-4">¿Por qué elegir Dispet?</h2>
-        <div class="row text-center">
-            <div class="col-md-4 mb-4">
-                <i class="fas fa-paw fa-3x text-primary mb-3"></i>
-                <h5>Comodidad</h5>
-                <p>Automatiza las comidas de tus mascotas y olvídate de las preocupaciones.</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <i class="fas fa-wifi fa-3x text-primary mb-3"></i>
-                <h5>Conectividad</h5>
-                <p>Controla el dispensador de forma remota desde tu teléfono móvil.</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <i class="fas fa-heart fa-3x text-primary mb-3"></i>
-                <h5>Calidad</h5>
-                <p>Productos duraderos y seguros, diseñados para el bienestar de tu mascota.</p>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Dispensador Compacto</h5>
+                    <p class="card-text">Ideal para espacios pequeños con diseño moderno.</p>
+                    <a href="/product/2" class="btn btn-primary">Ver Detalles</a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Llamada a la Acción -->
-    <div class="text-center mt-5">
-        <h3 class="mb-3">¡Haz que la vida de tu mascota sea más fácil con Dispet!</h3>
-        <a class="btn btn-success btn-lg" href="/products" role="button">Compra Ahora</a>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Dispensador Inteligente</h5>
+                    <p class="card-text">Conéctate desde cualquier lugar y personaliza las comidas.</p>
+                    <a href="/product/3" class="btn btn-primary">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

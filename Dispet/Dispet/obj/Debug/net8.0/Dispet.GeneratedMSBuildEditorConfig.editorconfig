@@ -34,10 +34,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGVja291dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/Contact.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,22 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/ProductDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0RGV0YWlscy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/Products.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0cy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/Profile.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/Support.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdXBwb3J0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/TrackOrder.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUcmFja09yZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/e-aycordero/source/repos/Dispet/Dispet/Components/Pages/Weather.razor]

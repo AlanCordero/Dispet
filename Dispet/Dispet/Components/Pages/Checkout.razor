@@ -1,45 +1,35 @@
 ﻿@page "/checkout"
 
-<h2 class="mb-4">Finalizar Pedido</h2>
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h3 class="card-title mb-4 text-center">Proceso de Pago</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre Completo</label>
+                <input type="text" id="name" class="form-control" />
+            </div>
 
-<EditForm Model="order" OnValidSubmit="ProcessOrder" class="border p-4 rounded shadow-sm bg-light">
-    <div class="form-group">
-        <label>Nombre Completo</label>
-        <InputText @bind-Value="order.CustomerName" class="form-control" />
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" id="email" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Dirección de Envío</label>
+                <input type="text" id="address" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label for="payment" class="form-label">Método de Pago</label>
+                <select id="payment" class="form-select">
+                    <option selected>Selecciona tu método de pago</option>
+                    <option value="credit">Tarjeta de Crédito</option>
+                    <option value="debit">Tarjeta de Débito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Completar Pedido</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label>Dirección</label>
-        <InputText @bind-Value="order.Address" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Correo Electrónico</label>
-        <InputText @bind-Value="order.Email" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Teléfono</label>
-        <InputText @bind-Value="order.PhoneNumber" class="form-control" />
-    </div>
-    <button class="btn btn-success">Realizar Pedido</button>
-</EditForm>
-<button class="btn btn-primary" @onclick="ProcessPayment">Pagar con Stripe</button>
-
-@code {
-    private async Task ProcessPayment()
-    {
-        // Lógica para realizar solicitud a tu API de pago
-    }
-}
-
-@code {
-    private Order order = new Order();
-
-    private void ProcessOrder() { /* Lógica para procesar el pedido */ }
-
-    private class Order
-    {
-        public string CustomerName { get; set; }
-        public string Address { get; set; }
-        public string Email { get; set; }
-        public string PhoneNumber { get; set; }
-    }
-}
+</div>

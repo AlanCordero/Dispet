@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7hO063TOI47pVcw6/AQreTL7CYj9455QE9/H/jiz6D8=",
+  "Hash": "uILmDx06Z3RPLMd02R+/PA503VeT+rbRAGCNktBoPjE=",
   "Source": "Dispet",
   "BasePath": "_content/Dispet",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\cart.html",
+      "SourceId": "Dispet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\",
+      "BasePath": "_content/Dispet",
+      "RelativePath": "cart.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cart.html"
+    },
+    {
       "Identity": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\favicon.png",
       "SourceId": "Dispet",
       "SourceType": "Discovered",
@@ -129,6 +148,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\Index.html",
+      "SourceId": "Dispet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\",
+      "BasePath": "_content/Dispet",
+      "RelativePath": "Index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    },
+    {
+      "Identity": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\productDetails.cs",
+      "SourceId": "Dispet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\",
+      "BasePath": "_content/Dispet",
+      "RelativePath": "productDetails.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\productDetails.cs"
     }
   ]
 }

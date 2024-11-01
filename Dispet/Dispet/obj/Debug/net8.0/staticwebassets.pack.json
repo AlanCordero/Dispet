@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Dispet.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\Index.html",
+      "PackagePath": "staticwebassets\\Index.html"
+    },
+    {
       "Id": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
@@ -17,8 +21,16 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\cart.html",
+      "PackagePath": "staticwebassets\\cart.html"
+    },
+    {
       "Id": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\productDetails.cs",
+      "PackagePath": "staticwebassets\\productDetails.cs"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Dispet.Microsoft.AspNetCore.StaticWebAssets.props",
