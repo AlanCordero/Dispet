@@ -1,0 +1,27 @@
+﻿@page "/users"
+@using Dispet.Models
+@using Dispet.ViewModels
+@inject UserViewModel UserVM
+
+<h2>Lista de Usuarios</h2>
+
+<button @onclick="() => UserVM.AddUserAsync(newUser)">Agregar Usuario</button>
+
+<ul>
+    @foreach (var user in UserVM.Users)
+    {
+        <li>
+            @user.Username - @user.Email
+            <button @onclick="() => UserVM.DeleteUserAsync(user.Id)">Eliminar</button>
+        </li>
+    }
+</ul>
+
+@code {
+    private User newUser = new User { Username = "Nuevo Usuario", Email = "email@ejemplo.com", Password = "123456" };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await UserVM.LoadUsersAsync();
+    }
+}

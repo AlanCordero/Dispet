@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uILmDx06Z3RPLMd02R+/PA503VeT+rbRAGCNktBoPjE=",
+  "Hash": "eUaLdKydMd/ED5SCLXQ1GaVoLesMq3uarBOwY3C2vRw=",
   "Source": "Dispet",
   "BasePath": "_content/Dispet",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\cart.html",
-      "SourceId": "Dispet",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\",
-      "BasePath": "_content/Dispet",
-      "RelativePath": "cart.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\cart.html"
     },
     {
       "Identity": "C:\\Users\\e-aycordero\\source\\repos\\Dispet\\Dispet\\wwwroot\\favicon.png",

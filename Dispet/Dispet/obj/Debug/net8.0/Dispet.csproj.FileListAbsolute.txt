@@ -27,3 +27,11 @@ C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\refint\Dispet.d
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.pdb
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.genruntimeconfig.cache
 C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\ref\Dispet.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\DnsClient.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\Snappier.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.csproj.AssemblyReference.cache
+C:\Users\e-aycordero\source\repos\Dispet\Dispet\obj\Debug\net8.0\Dispet.csproj.Up2Date

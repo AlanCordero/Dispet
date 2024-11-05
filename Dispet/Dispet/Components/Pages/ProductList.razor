@@ -1,0 +1,27 @@
+﻿@page "/products"
+@using Dispet.Models
+@using Dispet.ViewModels
+@inject ProductViewModel ProductVM
+
+<h2>Lista de Productos</h2>
+
+<button @onclick="() => ProductVM.AddProductAsync(newProduct)">Agregar Producto</button>
+
+<ul>
+    @foreach (var product in ProductVM.Products)
+    {
+        <li>
+            @product.Name - $@product.Price
+            <button @onclick="() => ProductVM.DeleteProductAsync(product.Id)">Eliminar</button>
+        </li>
+    }
+</ul>
+
+@code {
+    private Product newProduct = new Product { Name = "Nuevo Producto", Description = "Descripción", Price = 10.00m };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ProductVM.LoadProductsAsync();
+    }
+}
